@@ -223,7 +223,7 @@ with client.ApiClient(configuration) as api_client:
     api_instance = pool_api.PoolApi(api_client)
     limit = 100 # int | The numbers of items to return. (optional) if omitted the server will use the default value of 100
     offset = 0 # int | The number of items to skip before starting to collect the result set. (optional)
-    order_by = "order_by_example" # str | The name of the field to order the results by. Prefix a field name with `-` to reverse the sort order.  (optional)
+    order_by = "order_by_example" # str | The name of the field to order the results by. Prefix a field name with `-` to reverse the sort order.  *New in version 2.1.0*  (optional)
 
     # example passing only required values which don't have defaults set
     # and optional values
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **limit** | **int**| The numbers of items to return. | [optional] if omitted the server will use the default value of 100
  **offset** | **int**| The number of items to skip before starting to collect the result set. | [optional]
- **order_by** | **str**| The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  | [optional]
+ **order_by** | **str**| The name of the field to order the results by. Prefix a field name with &#x60;-&#x60; to reverse the sort order.  *New in version 2.1.0*  | [optional]
 
 ### Return type
 
@@ -361,7 +361,7 @@ Name | Type | Description  | Notes
 **401** | Request not authenticated due to missing, invalid, authentication info. |  -  |
 **403** | Client does not have sufficient permission. |  -  |
 **404** | A specified resource is not found. |  -  |
-**409** | The resource that a client tried to create already exists. |  -  |
+**409** | An existing resource conflicts with the request. |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

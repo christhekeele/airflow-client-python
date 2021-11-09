@@ -19,12 +19,12 @@
 
 # Role
 
-Role item
+a role item.  *New in version 2.1.0* 
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**name** | **str** | The name of the role | [optional] 
+**name** | **str** | The name of the role  *Changed in version 2.3.0*&amp;#58; A minimum character length requirement (&#39;minLength&#39;) is added.  | [optional] 
 **actions** | [**[ActionResource]**](ActionResource.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
