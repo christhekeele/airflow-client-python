@@ -27,7 +27,7 @@ Method | HTTP request | Description
 
 
 # **get_providers**
-> object get_providers()
+> dict get_providers()
 
 List providers
 
@@ -77,7 +77,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-**object**
+**dict**
 
 ### Authorization
 

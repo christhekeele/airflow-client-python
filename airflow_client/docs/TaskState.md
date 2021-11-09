@@ -24,7 +24,8 @@ Task state.
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**value** | **str** | Task state. |  must be one of ["success", "running", "failed", "upstream_failed", "skipped", "up_for_retry", "up_for_reschedule", "queued", "none", "scheduled", "removed", ]
+**value** | **str** | Task state. |  must be one of ["success", "running", "failed", "upstream_failed", "skipped", "up_for_retry", "up_for_reschedule", "queued", "none", "scheduled", "deferred", "sensing", "removed", ]
+**any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
